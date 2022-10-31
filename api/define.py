@@ -22,7 +22,7 @@ class handler(BaseHTTPRequestHandler):
                 definsions(definsion)
             message=str(definsions)
         else:
-            message="please enter a word"
+            message="please enter a words"
 
 
         self.send_response(200)
