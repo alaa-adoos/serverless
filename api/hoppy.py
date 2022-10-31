@@ -9,3 +9,4 @@ class handler(BaseHTTPRequestHandler):
 
         message="welcome alaa"
         self.wfile.write(message.encode())
+        return
