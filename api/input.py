@@ -15,7 +15,7 @@ class handler(BaseHTTPRequestHandler):
         print(query_string_list)
         dictionary=dict(query_string_list)
 
-        name=dict.get('name')
+        name=dictionary.get('name',False)
         if name:
             message=f'Hello {name}'
         else :
