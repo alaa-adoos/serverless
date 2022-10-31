@@ -9,8 +9,10 @@ class handler(BaseHTTPRequestHandler):
         # add query name to take name  as input
         #/api/input?name="alaa"  
         s= self.path
+        print("hiii",s)
         url_components=parse.urlsplit(s)
         query_string_list=parse.parse_qsl(url_components.query)
+        print(query_string_list)
         dictionary=dict(query_string_list)
 
         name=dict.get('name')
