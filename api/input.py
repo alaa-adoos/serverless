@@ -1,5 +1,4 @@
 from http.server import BaseHTTPRequestHandler
-from unicodedata import name
 from urllib import parse
 
 
